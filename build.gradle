@@ -29,9 +29,9 @@ allprojects {
 	}
 	
 	dependencies {
-    	compile "org.springframework.boot:spring-boot-starter-web:${springBootVersion}",
-        	    "org.springframework.data:spring-data-jpa:${springDataJpaVersion}",
-        	    "mysql:mysql-connector-java:${mysqlVersion}"
+    	compile 'org.springframework.boot:spring-boot-starter-web',
+    			'org.springframework.boot:spring-boot-starter-data-jpa',
+        	    'mysql:mysql-connector-java'
        	
        	testCompile 'org.springframework.boot:spring-boot-starter-test'
 	}

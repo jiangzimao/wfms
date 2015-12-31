@@ -1,5 +1,5 @@
 dependencies {
-  compile project(':wfms-core')
+	compile project(':wfms-api')
 
-  compile 'org.springframework.boot:spring-boot-starter-thymeleaf'
+	compile 'org.springframework.boot:spring-boot-starter-thymeleaf'
 }
