@@ -1,5 +1,7 @@
 dependencies {
 	compile project(':wfms-api')
 
-	compile 'org.springframework.boot:spring-boot-starter-thymeleaf'
+	compile 'org.springframework.boot:spring-boot-starter-thymeleaf',
+			'org.springframework.security:spring-security-web',
+			'org.springframework.security:spring-security-config'
 }

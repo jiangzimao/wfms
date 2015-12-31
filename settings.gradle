@@ -1,4 +1,4 @@
-include 'core','domain','api','web'
+include 'core','domain','activiti','api','web'
 
 rootProject.name = 'wfms'
 

@@ -17,35 +17,27 @@ public abstract class BaseEntity<ID extends Serializable> implements Persistable
 
     private static final long serialVersionUID = 1L;
 
-    public static final String YES = "Y";
-    public static final String NO = "N";
-
-    public static final String DELETED = "1";
-    public static final String UNDELETED = "0";
-
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
     protected ID id;
 
     @Temporal(TemporalType.TIMESTAMP)
-    @Column(name="created_at")
+    @Column(name="created_date")
     @CreatedDate
-    private Date createdAt;
+    private Date createdDate;
 
-    @Column(name="created_by")
+    @Column(name="created_by",length=64)
     @CreatedBy
     private String createdBy;
 
-    private String deleted = UNDELETED;
-
     @Temporal(TemporalType.TIMESTAMP)
-    @Column(name="updated_at")
+    @Column(name="last_modified_date")
     @LastModifiedDate
-    private Date updatedAt;
+    private Date lastModifiedDate;
 
-    @Column(name="updated_by")
+    @Column(name="last_modified_by",length=64)
     @LastModifiedBy
-    private String updatedBy;
+    private String lastModifiedBy;
 
     @Version
     private int version;
@@ -64,51 +56,44 @@ public abstract class BaseEntity<ID extends Serializable> implements Persistable
         return null != this.id;
     }
 
-    public Date getCreatedAt() {
-        return createdAt;
-    }
+	public Date getCreatedDate() {
+		return createdDate;
+	}
 
-    public void setCreatedAt(Date createdAt) {
-        this.createdAt = createdAt;
-    }
+	public void setCreatedDate(Date createdDate) {
+		this.createdDate = createdDate;
+	}
 
-    public String getCreatedBy() {
-        return createdBy;
-    }
+	public String getCreatedBy() {
+		return createdBy;
+	}
 
-    public void setCreatedBy(String createdBy) {
-        this.createdBy = createdBy;
-    }
+	public void setCreatedBy(String createdBy) {
+		this.createdBy = createdBy;
+	}
 
-    public String getDeleted() {
-        return deleted;
-    }
+	public Date getLastModifiedDate() {
+		return lastModifiedDate;
+	}
 
-    public void setDeleted(String deleted) {
-        this.deleted = deleted;
-    }
+	public void setLastModifiedDate(Date lastModifiedDate) {
+		this.lastModifiedDate = lastModifiedDate;
+	}
 
-    public Date getUpdatedAt() {
-        return updatedAt;
-    }
+	public String getLastModifiedBy() {
+		return lastModifiedBy;
+	}
 
-    public void setUpdatedAt(Date updatedAt) {
-        this.updatedAt = updatedAt;
-    }
+	public void setLastModifiedBy(String lastModifiedBy) {
+		this.lastModifiedBy = lastModifiedBy;
+	}
 
-    public String getUpdatedBy() {
-        return updatedBy;
-    }
+	public int getVersion() {
+		return version;
+	}
 
-    public void setUpdatedBy(String updatedBy) {
-        this.updatedBy = updatedBy;
-    }
+	public void setVersion(int version) {
+		this.version = version;
+	}
 
-    public int getVersion() {
-        return version;
-    }
-
-    public void setVersion(int version) {
-        this.version = version;
-    }
 }

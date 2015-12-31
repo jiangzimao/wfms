@@ -75,5 +75,14 @@
 				<arguments>1.0-projectRelativePath-matches-false-false-domain</arguments>
 			</matcher>
 		</filter>
+		<filter>
+			<id>1451541089846</id>
+			<name></name>
+			<type>26</type>
+			<matcher>
+				<id>org.eclipse.ui.ide.multiFilter</id>
+				<arguments>1.0-projectRelativePath-matches-false-false-activiti</arguments>
+			</matcher>
+		</filter>
 	</filteredResources>
 </projectDescription>
