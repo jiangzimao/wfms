@@ -1,0 +1,5 @@
+dependencies {
+  compile project(':wfms-core')
+
+  compile 'org.springframework.boot:spring-boot-starter-thymeleaf'
+}

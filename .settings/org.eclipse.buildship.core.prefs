@@ -1,4 +1,4 @@
 GRADLE_BUILD_COMMANDS=org.eclipse.jdt.core.javabuilder
-GRADLE_FILTERS=1.0-projectRelativePath-matches-false-false-build,1.0-projectRelativePath-matches-false-false-.gradle,1.0-projectRelativePath-matches-false-false-api,1.0-projectRelativePath-matches-false-false-core,1.0-projectRelativePath-matches-false-false-web
+GRADLE_FILTERS=1.0-projectRelativePath-matches-false-false-build,1.0-projectRelativePath-matches-false-false-.gradle,1.0-projectRelativePath-matches-false-false-api,1.0-projectRelativePath-matches-false-false-core,1.0-projectRelativePath-matches-false-false-web,1.0-projectRelativePath-matches-false-false-domain
 GRADLE_NATURES=org.eclipse.jdt.core.javanature
 eclipse.preferences.version=1

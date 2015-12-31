@@ -1,7 +1,7 @@
 {
   "1.0": {
-    "project_path": ":wfms-core",
-    "project_dir": "E:\\workspace_jqiaofu\\wfms\\core",
+    "project_path": ":wfms-domain",
+    "project_dir": "E:\\workspace_jqiaofu\\wfms\\domain",
     "connection_project_dir": "E:\\workspace_jqiaofu\\wfms",
     "connection_gradle_user_home": "D:\\gradle-2.9\\gradlelib",
     "connection_gradle_distribution": "GRADLE_DISTRIBUTION(LOCAL_INSTALLATION(D:\\gradle-2.9))",
