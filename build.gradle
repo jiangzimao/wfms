@@ -1,0 +1,38 @@
+buildscript {
+    repositories {
+    	mavenCentral()
+        maven { url oschinaRepo }
+    }
+    dependencies {
+        classpath "org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}"
+    }
+}
+
+apply plugin: 'java'
+
+repositories {
+	mavenCentral()
+    maven { url oschinaRepo }
+}
+
+allprojects {
+
+	apply plugin: 'java'
+	apply plugin: 'spring-boot'
+	
+	group = 'org.jqiaofu.wfms'
+  	version = '1.0.0-SNAPSHOT'
+	
+    repositories {
+		mavenCentral()
+    	maven { url oschinaRepo }
+	}
+	
+	dependencies {
+    	compile "org.springframework.boot:spring-boot-starter-web:${springBootVersion}",
+        	    "org.springframework.data:spring-data-jpa:${springDataJpaVersion}",
+        	    "mysql:mysql-connector-java:${mysqlVersion}"
+       	
+       	testCompile 'org.springframework.boot:spring-boot-starter-test'
+	}
+}

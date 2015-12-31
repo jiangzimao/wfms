@@ -1,0 +1,7 @@
+include 'core','api','web'
+
+rootProject.name = 'wfms'
+
+rootProject.children.each { childProject ->
+  childProject.name = 'wfms-' + childProject.name
+}
