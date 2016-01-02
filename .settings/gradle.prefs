@@ -1,10 +1,10 @@
 {
   "1.0": {
     "project_path": ":",
-    "project_dir": "E:\\workspace_jqiaofu\\wfms",
-    "connection_project_dir": "E:\\workspace_jqiaofu\\wfms",
-    "connection_gradle_user_home": "D:\\gradle-2.9\\gradlelib",
-    "connection_gradle_distribution": "GRADLE_DISTRIBUTION(LOCAL_INSTALLATION(D:\\gradle-2.9))",
+    "project_dir": "D:\\develop\\workspace\\wfms",
+    "connection_project_dir": "D:\\develop\\workspace\\wfms",
+    "connection_gradle_user_home": "D:\\develop\\gradle-2.10\\gradlelib",
+    "connection_gradle_distribution": "GRADLE_DISTRIBUTION(LOCAL_INSTALLATION(D:\\develop\\gradle-2.10))",
     "connection_java_home": null,
     "connection_jvm_arguments": "",
     "connection_arguments": ""
